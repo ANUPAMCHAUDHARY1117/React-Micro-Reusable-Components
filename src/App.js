@@ -1,6 +1,6 @@
 import React from 'react';
 import TableMicroComponent from './components/table/table';
-import './App.css';
+import './lib/materialize.css';
 import tableData from './components/table/tableData';
 
 function App() {

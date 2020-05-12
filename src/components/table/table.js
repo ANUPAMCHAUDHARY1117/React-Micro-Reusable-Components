@@ -1,5 +1,4 @@
 import React from 'react';
-import './table.css';
 
 export const TableMicroComponent = ({
 	tableData: { columnDefs, rowData, striped, highlight, centrered, responsiveTable },
