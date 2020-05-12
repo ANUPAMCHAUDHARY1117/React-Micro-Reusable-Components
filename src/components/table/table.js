@@ -1,8 +1,20 @@
 import React from 'react';
 
-export const TableMicroComponent = ({
-	tableData: { columnDefs, rowData, striped, highlight, centrered, responsiveTable },
-}) => {
+/**
+ * @param {Object[]} columnDefs - Defining column with heading
+ * @param {string} columnDefs.headerName - Header for the column
+ * @param {string} columnDefs.field - Column
+ *
+ * @param {Object[]} rowData - Array of each row
+ * @param {string} rowData.field - The key would be field
+ *
+ * @param {boolean} striped
+ * @param {boolean} highlight
+ * @param {boolean} centered
+ * @param {boolean} responsiveTable
+ */
+
+const TableMicroComponent = ({ columnDefs, rowData, striped, highlight, centrered, responsiveTable }) => {
 	return (
 		<table
 			className={`${striped ? 'striped' : ''}
