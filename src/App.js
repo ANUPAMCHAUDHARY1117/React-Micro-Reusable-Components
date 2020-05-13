@@ -15,7 +15,22 @@ function App() {
 				centered={tableData.centrered}
 				responsiveTable={tableData.responsiveTable}
 			/>
-			<TextInput />
+			<div className='row'>
+				<div className='col s6'>
+					<TextInput
+						id='name'
+						type='text'
+						value=''
+						placeholder='name'
+						label='First Name'
+						validation={true}
+						disabled={false}
+						inline={false}
+						helperField={true}
+						helperText='Please fill the name'
+					/>
+				</div>
+			</div>
 		</div>
 	);
 }
