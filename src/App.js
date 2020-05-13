@@ -4,6 +4,7 @@ import TextInput from './components/forms/text-input/text-input';
 import './lib/materialize.css';
 import tableData from './components/table/tableData';
 import Checkbox from './components/forms/checkbox/checkbox';
+import RadioButton from './components/forms/radio-buttons/radio-buttons';
 
 function App() {
 	return (
@@ -33,6 +34,10 @@ function App() {
 				</div>
 			</div>
 			<Checkbox checked={true} classStyle='filled-in' />
+			<RadioButton name='group1' title='red' classStyle='with-gap' />
+			<RadioButton name='group1' title='blue' />
+			<RadioButton name='group1' title='green' />
+			<input type='text' class='datepicker' />
 		</div>
 	);
 }
