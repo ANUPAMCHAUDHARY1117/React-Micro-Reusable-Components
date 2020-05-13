@@ -3,6 +3,7 @@ import TableMicroComponent from './components/table/table';
 import TextInput from './components/forms/text-input/text-input';
 import './lib/materialize.css';
 import tableData from './components/table/tableData';
+import Checkbox from './components/forms/checkbox/checkbox';
 
 function App() {
 	return (
@@ -31,6 +32,7 @@ function App() {
 					/>
 				</div>
 			</div>
+			<Checkbox checked={true} classStyle='filled-in' />
 		</div>
 	);
 }
