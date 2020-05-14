@@ -6,6 +6,7 @@ import tableData from './components/table/tableData';
 import Checkbox from './components/forms/checkbox/checkbox';
 import RadioButton from './components/forms/radio-buttons/radio-buttons';
 import Select from './components/forms/select/select';
+import Audio from './components/audio/audio';
 
 function App() {
 	return (
@@ -38,7 +39,17 @@ function App() {
 			<RadioButton name='group1' title='red' classStyle='with-gap' />
 			<RadioButton name='group1' title='blue' />
 			<RadioButton name='group1' title='green' />
-			<div class='input-field col s12'>
+			<div className='row'>
+				<div className='col s12'>
+					<Audio
+						list={[
+							{ src: 'https://interactive-examples.mdn.mozilla.net/media/examples/t-rex-roar.mp3', type: 'audio/mp3' },
+						]}
+						loop={true}
+					/>
+				</div>
+			</div>
+			<div className='input-field col s12'>
 				<Select label='Pick you fruit' values={['mango', 'grape', 'orange']} />
 			</div>
 		</div>
