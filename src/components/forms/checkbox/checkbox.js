@@ -16,7 +16,7 @@ const Checkbox = ({ checked, classStyle, disabled }) => {
 			<label>
 				<input
 					type='checkbox'
-					checked={state.checked}
+					defaultChecked={state.checked}
 					onClick={toggleCheckbox}
 					disabled={disabled}
 					className={classStyle}

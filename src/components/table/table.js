@@ -23,17 +23,17 @@ const TableMicroComponent = ({ columnDefs, rowData, striped, highlight, centrere
 		${responsiveTable ? 'responsive-table' : ''}`}
 		>
 			<thead>
-				<tr>
+				<tr key={Math.floor(Math.random() * 1000000)}>
 					{columnDefs.map((column) => (
-						<th>{column.headerName}</th>
+						<th key={column.headerName}>{column.headerName}</th>
 					))}
 				</tr>
 			</thead>
 			<tbody>
 				{rowData.map((row) => (
-					<tr>
+					<tr key={Math.floor(Math.random() * 1000000)}>
 						{columnDefs.map((column) => (
-							<td>{row[column.field]}</td>
+							<td key={row[column.field]}>{row[column.field]}</td>
 						))}
 					</tr>
 				))}

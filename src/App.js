@@ -10,6 +10,8 @@ import Audio from './components/audio/audio';
 import Video from './components/video/video';
 import TextArea from './components/text-area/text-area';
 import Teaser from './components/teaser/teaser';
+import Collection from './components/collection/collection';
+import List from './components/list/list';
 
 function App() {
 	return (
@@ -58,6 +60,8 @@ function App() {
 			<div className='input-field col s12'>
 				<Select label='Pick you fruit' values={['mango', 'grape', 'orange']} />
 			</div>
+			<Collection />
+			<List />
 		</div>
 	);
 }

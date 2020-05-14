@@ -4,7 +4,7 @@ const TextArea = () => {
 	return (
 		<div>
 			<label className='active'>Textarea</label>
-			<textarea id='textarea1' class='materialize-textarea' />
+			<textarea id='textarea1' className='materialize-textarea' />
 		</div>
 	);
 };
