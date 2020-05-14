@@ -5,6 +5,7 @@ import './lib/materialize.css';
 import tableData from './components/table/tableData';
 import Checkbox from './components/forms/checkbox/checkbox';
 import RadioButton from './components/forms/radio-buttons/radio-buttons';
+import Select from './components/forms/select/select';
 
 function App() {
 	return (
@@ -37,7 +38,9 @@ function App() {
 			<RadioButton name='group1' title='red' classStyle='with-gap' />
 			<RadioButton name='group1' title='blue' />
 			<RadioButton name='group1' title='green' />
-			<input type='text' class='datepicker' />
+			<div class='input-field col s12'>
+				<Select label='Pick you fruit' values={['mango', 'grape', 'orange']} />
+			</div>
 		</div>
 	);
 }
