@@ -8,6 +8,8 @@ import RadioButton from './components/forms/radio-buttons/radio-buttons';
 import Select from './components/forms/select/select';
 import Audio from './components/audio/audio';
 import Video from './components/video/video';
+import TextArea from './components/text-area/text-area';
+import Teaser from './components/teaser/teaser';
 
 function App() {
 	return (
@@ -51,6 +53,8 @@ function App() {
 				</div>
 			</div>
 			<Video src='https://s3.amazonaws.com/codecademy-content/courses/React/react_video-slow.mp4' type='video/mp4' />
+			<TextArea />
+			<Teaser />
 			<div className='input-field col s12'>
 				<Select label='Pick you fruit' values={['mango', 'grape', 'orange']} />
 			</div>
